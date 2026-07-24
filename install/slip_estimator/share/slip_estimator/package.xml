@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>slip_estimator</name>
+  <version>0.0.1</version>
+  <description>Kinematic observer and EKF for estimating slip parameters in narrow environments.</description>
+  <maintainer email="researcher@todo.todo">Researcher</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 依赖核心 ROS 2 库和传感器消息类型 -->
+  <depend>rclcpp</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <!-- 依赖你刚才写的自定义消息包 -->
+  <depend>my_robot_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

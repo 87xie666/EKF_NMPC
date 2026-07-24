@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>my_robot_simulation</name>
+  <version>0.0.1</version>
+  <description>Gazebo simulation environment and Nav2 bringup for narrow pipe inspection.</description>
+  <maintainer email="researcher@todo.todo">Researcher</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  
+  <!-- 依赖你自己的控制层和感知层包 -->
+  <exec_depend>slip_estimator</exec_depend>
+  <exec_depend>my_nav2_plugins</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from my_robot_msgs/msg/SlipState.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module my_robot_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "带有时间戳和坐标系信息的标准头文件")
+    struct SlipState {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "纵向速度执行效率 (范围通常为 0.0 ~ 1.0, 1.0表示完美抓地无打滑)")
+      double eta_v;
+
+      @verbatim (language="comment", text=
+        "转向执行效率 (范围通常为 0.0 ~ 1.0)")
+      double eta_w;
+
+      @verbatim (language="comment", text=
+        "侧滑角 Sideslip angle (单位：rad，质心实际运动方向与车头朝向的夹角)")
+      double beta;
+    };
+  };
+};

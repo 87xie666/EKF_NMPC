@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://narrow_pipe</uri>
+      <pose>10 0 0 0 0 0</pose> <!-- 将管道放置在小车前方 -->
+    </include>
+    
+    <!-- 物理引擎步长设置，保证 MPC 求解时的实时性匹配 -->
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+  </world>
+</sdf>

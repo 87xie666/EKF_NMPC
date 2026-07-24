@@ -1,0 +1,9 @@
+<library path="slip_nmpc_plugin">
+  <class name="my_nav2_plugins/SlipAwareNMPC" 
+         type="my_nav2_plugins::SlipAwareNMPC" 
+         base_class_type="nav2_core::Controller">
+    <description>
+      Adaptive Non-linear Model Predictive Controller that compensates for sideslip and traction loss.
+    </description>
+  </class>
+</library>
